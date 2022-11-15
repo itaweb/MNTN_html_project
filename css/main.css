@@ -118,12 +118,31 @@ body {
   margin-bottom: 32px;
   font-family: "Playfair Display", serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 86px;
+  font-weight: 500;
+  font-size: 88px;
   line-height: 1.136;
   text-transform: capitalize;
   color: #fff;
 }
 
 .hero-scroll {
+  display: inline-block;
+  position: relative;
+  padding-right: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero-scroll::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 24px;
+  background-image: url("./../img/icons/arrow_down.svg");
 }
