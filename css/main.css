@@ -78,3 +78,52 @@ body {
 .account:hover {
   color: #fbd784;
 }
+
+/* HERO */
+
+.hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.hero-category {
+  margin-bottom: 32px;
+  position: relative;
+  padding-left: 104px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+}
+
+.hero-category::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: block;
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+}
+.hero-title {
+  margin-bottom: 32px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 86px;
+  line-height: 1.136;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.hero-scroll {
+}
