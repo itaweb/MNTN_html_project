@@ -172,13 +172,40 @@ body {
 }
 
 .article-text {
-  margin-right: 114px;
+  padding-left: 150px;
 }
 
 .article-subtitle {
+  margin-bottom: 32px;
+  position: relative;
+  padding-left: 96px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+}
+
+.article-subtitle::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: block;
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
 }
 
 .article-title {
+  font-family: "Chronicle Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  color: #fff;
 }
 
 .article-read-more {
