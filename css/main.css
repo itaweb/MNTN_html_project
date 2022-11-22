@@ -173,6 +173,7 @@ body {
 
 .article-text {
   padding-left: 150px;
+  min-width: 782px;
 }
 
 .article-subtitle {
@@ -200,15 +201,44 @@ body {
 }
 
 .article-title {
-  font-family: "Chronicle Display";
+  margin-bottom: 27px;
+  min-width: 555px;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
-  line-height: 77px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.article-text p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
   color: #fff;
 }
 
 .article-read-more {
+  display: inline-block;
+  position: relative;
+  padding-right: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.article-read-more::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 24px;
+  background-image: url("./../img/icons/arrow_down.svg");
 }
 .article-img {
 }
